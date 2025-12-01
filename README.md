@@ -94,6 +94,7 @@ UC4 <.. UC3 : <<extend>>
 @enduml
 
 ```
+<img width="1063" height="633" alt="image" src="https://github.com/user-attachments/assets/22b5b6e7-7f87-4602-8672-8909a25fb18d" />
 
 
 
