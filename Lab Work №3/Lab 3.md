@@ -3,7 +3,7 @@
 ## Вариант 15: 
 Крупная компания разрабатывает систему бронирования и управления отелями премиум-класса.
 
-```python
+```java
 // BookingValidator.java
 @Component
 public class BookingValidator {
