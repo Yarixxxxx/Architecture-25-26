@@ -13,7 +13,7 @@
 
 <img width="1058" height="967" alt="image" src="https://github.com/user-attachments/assets/36e40ad3-d98a-4b3d-8a4d-ea1d1675a644" />
 
-## Диаграмма компонентов - Backend API
+## Диаграмма компонентов
 
 <img width="1854" height="1074" alt="image" src="https://github.com/user-attachments/assets/8ad86331-81bc-47ea-83d1-5fb6afb15ec6" />
 
