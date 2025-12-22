@@ -86,7 +86,8 @@ public class BookingValidator {
 
 ### YAGNI
 
-'''java
+```java
+
 // BookingService.java
 @Service
 public class BookingService {
@@ -134,12 +135,12 @@ public class BookingService {
         bookingRepository.save(booking);
         return true;
     }
-'''
+```
 Реализованы только базовые методы для работы с бронированиями. Не реализуются дополнительные возможности, пока нет конкретных требований к ним.
 
 ### DRY
 
-'''java
+```java
 
 // DateUtils.java - общий утилитный класс
 @Component
@@ -197,12 +198,12 @@ public class InvoiceService {
     }
 }
 
-'''
+```
 Общая логика работы с датами вынесена в отдельный класс DateUtils. Предотвращает дублирование кода в разных сервисах.
 
 ### SOLID
 
-'''typescript
+```typescript
 
 // BookingCard.tsx - только отображение информации о бронировании
 const BookingCard: React.FC<BookingCardProps> = ({ booking }) => {
@@ -261,7 +262,7 @@ class PushNotification implements NotificationService {
   }
 }
 
-'''
+```
 
 #### Single Responsibility Principle:
 
