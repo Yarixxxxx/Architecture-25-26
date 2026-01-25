@@ -28,3 +28,29 @@
   "status": "CREATED",
   "createdAt": "2026-01-25T12:00:00Z"
 }
+```
+### 1.2.2 Ошибка (Error Response)
+
+**Формат ответа при ошибке:**
+```json
+{
+  "timestamp": "2026-01-25T12:00:00Z",
+  "status": 400,
+  "error": "VALIDATION_ERROR",
+  "message": "checkInDate must be earlier than checkOutDate",
+  "path": "/api/v1/bookings"
+}
+```
+### 1.2.3 Ответ со списком (PagedResponse)
+
+**Формат ответа:**
+```json
+{
+  "page": 0,
+  "size": 20,
+  "total": 1,
+  "items": [
+    { ... Booking ... }
+  ]
+}
+```
