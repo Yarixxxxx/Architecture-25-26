@@ -233,3 +233,50 @@ GET /api/v1/rooms/rm_512
 ### Ответ 200 OK
 
 Возвращает объект `RoomResponse`.
+
+
+
+# Тестирование API --- Booking Service
+
+
+Base URL:
+
+    https://87567a97-ab63-4b5d-96e1-ebb7c5089149.mock.pstmn.io/api/v1
+
+------------------------------------------------------------------------
+
+# 1. Тестирование GET /bookings
+
+## Тестируемое API
+
+Получение списка бронирований
+
+## Метод
+
+GET
+
+## Строка запроса
+
+    GET {{baseUrl}}/bookings?page=0&size=20&status=CONFIRMED
+
+Params:
+
+    page=0
+    size=20
+    status=CONFIRMED
+
+------------------------------------------------------------------------
+
+## Принтскрин передаваемых заголовков и параметров
+
+<img width="828" height="337" alt="image" src="https://github.com/user-attachments/assets/a2421df8-ad6c-42d8-b6e5-3d8562cd015a" />
+
+
+------------------------------------------------------------------------
+
+## Принтскрин полученного ответа
+
+<img width="1148" height="403" alt="image" src="https://github.com/user-attachments/assets/b11c29a3-0019-4803-97c4-ae3e386b80b3" />
+
+
+
