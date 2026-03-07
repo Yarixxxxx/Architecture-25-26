@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <h1>Hotel booking system</h1>
+    <button onclick="loadRooms()">Load rooms</button>
+    <ul id="rooms"></ul>
+
+    <script>
+        async function loadRooms() {
+            try {
+                const response = await fetch("http://localhost:8080/rooms");
+                const rooms = await response.json();
+
+                const list = document.getElementById("rooms");
+                list.innerHTML = "";
+
+                rooms.forEach(room => {
+                    const li = document.createElement("li");
+                    li.innerText = room.name + " - $" + room.price;
+                    list.appendChild(li);
+                });
+            } catch (error) {
+                console.error("Ошибка загрузки комнат:", error);
+            }
+        }
+    </script>
+</body>
+</html>
