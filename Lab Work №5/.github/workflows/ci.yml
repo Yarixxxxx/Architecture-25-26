@@ -20,15 +20,15 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install backend dependencies
-        working-directory: application/backend
+        working-directory: ./backend
         run: npm install
 
       - name: Run tests
-        working-directory: application/backend
+        working-directory: ./backend
         run: npm test
 
       - name: Build backend image
-        run: docker build -t hotel-backend application/backend
+        run: docker build -t hotel-backend ./backend
 
       - name: Build web image
-        run: docker build -t hotel-web application/web
+        run: docker build -t hotel-web ./web
