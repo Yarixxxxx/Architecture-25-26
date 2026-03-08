@@ -11,7 +11,7 @@
     <script>
         async function loadRooms() {
             try {
-                const response = await fetch("http://localhost:8080/rooms");
+                const response = await fetch("http://91.219.151.175/:8080/rooms");
                 const rooms = await response.json();
 
                 const list = document.getElementById("rooms");
