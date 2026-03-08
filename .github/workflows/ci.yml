@@ -19,16 +19,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - name: Install backend dependencies
-        working-directory: ./lab5/backend
-        run: npm install
+        working-directory: ./Lab Work №5/backend
+        run: npm ci
 
       - name: Run tests
-        working-directory: ./lab5/backend
+        working-directory: ./Lab Work №5/backend
         run: npm test
 
       - name: Build backend image
-        run: docker build -t hotel-backend ./lab5/backend
+        run: docker build -t hotel-backend "./Lab Work №5/backend"
 
       - name: Build web image
-        run: docker build -t hotel-web ./lab5/web
+        run: docker build -t hotel-web "./Lab Work №5/web"
