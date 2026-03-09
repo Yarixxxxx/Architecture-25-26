@@ -2,18 +2,6 @@ version: "3.9"
 
 services:
 
-  backend:
-    build: ./backend
-    ports:
-      - "8080:8080"
-
-  web:
-    build: ./web
-    ports:
-      - "3000:80"
-    depends_on:
-      - backend
-
   postgres:
     image: postgres:16
     environment:
@@ -22,3 +10,17 @@ services:
       POSTGRES_PASSWORD: postgres
     volumes:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  web:
+    build: ./web
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
