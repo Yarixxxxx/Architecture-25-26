@@ -389,7 +389,7 @@ hotel-booking
 |    └── workflows
 |        ├── ci.yml
 |        └── cd.yml
-└── .github
+└──  lab5
 |    └── backend
 │        ├── server.js
 │        ├── db.js
