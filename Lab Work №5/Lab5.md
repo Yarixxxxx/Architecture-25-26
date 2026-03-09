@@ -389,7 +389,12 @@ hotel-booking
 │   ├── server.js
 │   ├── db.js
 │   ├── package.json
+|   ├── package-lock.json
 │   └── Dockerfile
+|   └── app
+|       ├── app.js
+|   └── tests
+|       ├── test.js  
 │
 ├── web
 │   ├── index.html
